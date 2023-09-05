@@ -1,6 +1,5 @@
 # Dice Game :game_die:
-
-![Chopper Logo](/img/chop.png)
+![Dice Logo](/img/dice.jpg)
 
 ## Objectives
 * To practice the 3-step problem solving process
