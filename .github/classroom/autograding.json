@@ -1,0 +1,64 @@
+{
+    "tests": [
+      {
+        "name": "Winner Statements",
+        "setup": "",
+        "run": "mvn test -Dtest=DiceGameTest#testWinnerStatements",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 1,
+        "points": 5
+      },
+      {
+        "name": "says you rolled",
+        "setup": "",
+        "run": "mvn test -Dtest=DiceGameTest#testYouRolled",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 1,
+        "points": 5
+      },
+      {
+        "name": "large bet",
+        "setup": "",
+        "run": "mvn test -Dtest=DiceGameTest#testLargeBet",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 1,
+        "points": 5
+      },
+      {
+        "name": "testMediumBet",
+        "setup": "",
+        "run": "mvn test -Dtest=DiceGameTest#testMediumBet",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 1,
+        "points": 3
+      },
+      {
+        "name": "testSmallBet",
+        "setup": "",
+        "run": "mvn test -Dtest=DiceGameTest#testSmallBet",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 1,
+        "points": 3
+      },
+      {
+        "name": "testNegativeBet",
+        "setup": "",
+        "run": "mvn test -Dtest=DiceGameTest#testNegativeBet",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 1,
+        "points": 4
+      }
+    ]
+  }
