@@ -2,11 +2,8 @@ package edu.citadel;
 
 import java.util.Scanner;
 
-/**
- * Hello world!
- *
- */
-public class DiceGame {
+
+public class PasswordChecker {
     public static void main(String[] args) {
         // write your program here.
         // Don't forget to plan and write pseudocode.
