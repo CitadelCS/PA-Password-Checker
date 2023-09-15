@@ -1,11 +1,11 @@
-# Dice Game :game_die:
+# Password Checker :white_check_mark:
 ![Dice Logo](/img/dice.jpg)
 
 ## Objectives
-* To practice the 3-step problem solving process
-* To use random numbers
-* To use conditional statements – if, if-else, and switch
-* To practice following specific output format guidelines
+* To process strings and characters
+* To practice conditional statements
+* To see loops in action
+
 
 ## Collaboration policy
 Please see the syllabus for the full policy. This course permits many forms of collaboration, including with course staff and classmates. However, you must be careful to collaborate only as authorized below. If you get stuck, check out code examples from the textbook, or post on Discord in the #201 channel (without revealing your solutions), DM the course staff, or visit tutoring.
@@ -19,68 +19,51 @@ View solutions from	| no	| no	| no
 Plagiarize code from	| no	| no	| no
 
 ## Overview
-Follow the three-step problem solving process to make a simple dice game. **In this assignment it is very important to match output instructions verbatim.** First, after a prompt (sentence 1), the user enters an amount of money for a wager. The program then replies with a sentence based on that wager (see options for sentence 2). Then the program simulates rolling two independent six-sided dice by generating two random integers between 1 and 6. The program then reports the rolled values (see format for sentence 3). Finally, the program should use a switch or if/else statement to compute the winnings (or losses) based on the total value rolled and displays a sentence describing the result (see options for sentence 4). The program finishes with a sentence reporting how much money was won (see format for sentence 5).
+Follow the problem solving process to make a password validation program. First, prompt the user to enter an 8-character password. Then, check it according to the rules below. Then, output the word GOOD or BAD based on if the password follows the rules or not.
 
-## Output format instructions for sentences referenced above
-1. The prompt for the initial wager should say: `Enter your wager amount:`
-2. The program outputs one of the following sentences based on the wager amount:
-    * `Invalid bet.`	If the wager is <= 0 (you should reset the wager to zero for them in this case)
-    * `Small bet.`	If the wager is >0 and < 15
-    * `Medium bet.`	If the wager is >= 15 and < 60
-    * `High roller.`	If the wager is >= 60
-3. The program outputs this sentence: `You rolled X and Y.`
-    * X and Y should be replaced with the numeric roll values as in the sample runs.
-4. The program outputs one of the five following sentences based on the sum of the dice rolls:
-    * If the sum is 2 or 12, the player wins 15x the wager. Display: `Big winner!`
-    * If the sum is 3 or 11, the player wins 10x the wager. Display: `Medium winner!`
-    * If the sum is 4 or 10, the player wins 5x the wager. Display: `Small winner.`
-    * If the sum is 5 or 9, the player wins the wager back. Display: `Draw.`
-    * If the sum is 6, 7, or 8, the player loses the wager. Display: `You lose.`
-5. Finally, display this sentence: `You won $X`
-    * X is replaced by the winnings (or zero if the wager is lost)
-    * No decimal or formatting is required. Only the dollar sign.
+### Rules for valid passwords
+To make your code easier, valid passwords must satisfy all of the following conditions:
+* Exactly 8 characters
+* At least one uppercase letter
+* At least one lowercase letter
+* At least one digit
+* At least one symbol, which must be either `!` or `?` or `*` (and nothing else)
+
 
 ## Getting started
-Open `src/main/java/edu/citadel/DiceGame.java` and add your code to the main method. To run your main method locally, enter the run and debug menu on the left, or right-click the main method and select `Run Java`.
+Open `src/main/java/edu/citadel/PasswordChecker.java` and add your code to the main method. To run your main method locally, enter the run and debug menu on the left, or right-click the main method and select `Run Java`.
 
-To run the test cases locally, open a terminal and type `mvn test`. Alternatively, you can open the file `src/test/java/edu/citadel/DiceGameTest.java` and click the play buttons. You can review the tests in this file, but do not modify any file other than `DiceGame.java`.
+To run the test cases locally, open a terminal and type `mvn test`. Alternatively, you can open the file `src/test/java/edu/citadel/PasswordCheckerTest.java` and click the play buttons. You can review the tests in this file, but do not modify any file other than `PasswordChecker.java`.
+
+### Super big hint
+We haven’t really learned loops yet, but a loop makes it really easy to process one character at a time in the password string without repeating our code over and over again. So, after you read in the password from the user with your scanner, use the following code to sequentially check each character in the string. I called my password string from the user `pw`, and each character is called `ch` as it is processed by the loop.
+```java
+    // code to prompt and read in the password goes up here before the loop
+    for (char ch : pw.toCharArray()) { // don’t worry about how this works yet
+
+	// Put your if-statements here to check the character ch
+	// against the rules above. Consider using counters to track
+	// the required character classes.
+
+    }
+    // code to check and finish up goes down here.
+```
 
 ## Sample Output from four separate runs of the solution
 ```
-Enter your wager amount: 
-50.00
-Medium bet.
-Rolling the dice!
-You rolled 3 and 2.
-Draw.
-You won $50.0
+ENTER PASSWORD PLEASE:
+cadet
+BAD
 ```
 ```
-Enter your wager amount: 
-3.5
-Small bet.
-Rolling the dice!
-You rolled 5 and 2.
-You lose.
-You won $0.0
+ENTER PASSWORD PLEASE:
+cadet!
+BAD
 ```
 ```
-Enter your wager amount: 
-99.99
-High roller.
-Rolling the dice!
-You rolled 1 and 1.
-Big Winner!
-You won $1499.85
-```
-```
-Enter your wager amount: 
--27
-Invalid bet.
-Rolling the dice!
-You rolled 6 and 4.
-Small Winner.
-You won $0.0
+ENTER PASSWORD PLEASE:
+Cadet!
+BAD
 ```
 
 ## Testing and Submission
