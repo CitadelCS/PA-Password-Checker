@@ -1,64 +1,54 @@
 {
-    "tests": [
-      {
-        "name": "Winner Statements",
-        "setup": "",
-        "run": "mvn test -Dtest=DiceGameTest#testWinnerStatements",
-        "input": "",
-        "output": "",
-        "comparison": "included",
-        "timeout": 1,
-        "points": 5
-      },
-      {
-        "name": "says you rolled",
-        "setup": "",
-        "run": "mvn test -Dtest=DiceGameTest#testYouRolled",
-        "input": "",
-        "output": "",
-        "comparison": "included",
-        "timeout": 1,
-        "points": 5
-      },
-      {
-        "name": "large bet",
-        "setup": "",
-        "run": "mvn test -Dtest=DiceGameTest#testLargeBet",
-        "input": "",
-        "output": "",
-        "comparison": "included",
-        "timeout": 1,
-        "points": 5
-      },
-      {
-        "name": "testMediumBet",
-        "setup": "",
-        "run": "mvn test -Dtest=DiceGameTest#testMediumBet",
-        "input": "",
-        "output": "",
-        "comparison": "included",
-        "timeout": 1,
-        "points": 3
-      },
-      {
-        "name": "testSmallBet",
-        "setup": "",
-        "run": "mvn test -Dtest=DiceGameTest#testSmallBet",
-        "input": "",
-        "output": "",
-        "comparison": "included",
-        "timeout": 1,
-        "points": 3
-      },
-      {
-        "name": "testNegativeBet",
-        "setup": "",
-        "run": "mvn test -Dtest=DiceGameTest#testNegativeBet",
-        "input": "",
-        "output": "",
-        "comparison": "included",
-        "timeout": 1,
-        "points": 4
-      }
-    ]
-  }
+  "tests": [
+    {
+      "name": "length",
+      "setup": "",
+      "run": "mvn test -Dtest=PasswordChecker#testPassLen*",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 5
+    },
+    {
+      "name": "upper-lowercase",
+      "setup": "",
+      "run": "mvn test -Dtest=PasswordChecker#testPassCase*",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 5
+    },
+    {
+      "name": "symbols",
+      "setup": "",
+      "run": "mvn test -Dtest=PasswordChecker#testSym*",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 5
+    },
+    {
+      "name": "good 2",
+      "setup": "",
+      "run": "mvn test -Dtest=PasswordChecker#testPassGood2*",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 5
+    },
+    {
+      "name": "good1",
+      "setup": "",
+      "run": "mvn test -Dtest=PasswordChecker#testPassGood1*",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 5
+    }
+  ]
+}
