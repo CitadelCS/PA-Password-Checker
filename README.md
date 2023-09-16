@@ -65,6 +65,21 @@ ENTER PASSWORD PLEASE:
 Cadet!
 BAD
 ```
+```
+ENTER PASSWORD PLEASE:
+Cadet1!
+BAD
+```
+```
+ENTER PASSWORD PLEASE:
+Cadet!12
+GOOD
+```
+```
+ENTER PASSWORD PLEASE:
+OMG!lol7
+GOOD
+```
 
 ## Testing and Submission
 When you think you are done, commit your changes to GitHub to trigger the autograder. You can do this on the terminal, or using the Source Control menu option to the left (recommended). You do not need to create a branch or pull request; just commit your changes and push/synchronize them.
