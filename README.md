@@ -1,5 +1,5 @@
 # Password Checker :white_check_mark:
-![Dice Logo](/img/dice.png)
+![Dice Logo](/img/password.png)
 
 ## Objectives
 * To process strings and characters
