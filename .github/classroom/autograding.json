@@ -23,7 +23,7 @@
     {
       "name": "symbols",
       "setup": "",
-      "run": "mvn test -Dtest=PasswordCheckerTest#testSym*",
+      "run": "mvn test -Dtest=PasswordCheckerTest#testPassSym*",
       "input": "",
       "output": "",
       "comparison": "exact",
