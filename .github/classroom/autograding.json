@@ -3,7 +3,7 @@
     {
       "name": "length",
       "setup": "",
-      "run": "mvn test -Dtest=PasswordChecker#testPassLen*",
+      "run": "mvn test -Dtest=PasswordCheckerTest#testPassLen*",
       "input": "",
       "output": "",
       "comparison": "exact",
@@ -13,7 +13,7 @@
     {
       "name": "upper-lowercase",
       "setup": "",
-      "run": "mvn test -Dtest=PasswordChecker#testPassCase*",
+      "run": "mvn test -Dtest=PasswordCheckerTest#testPassCase*",
       "input": "",
       "output": "",
       "comparison": "exact",
@@ -23,7 +23,7 @@
     {
       "name": "symbols",
       "setup": "",
-      "run": "mvn test -Dtest=PasswordChecker#testSym*",
+      "run": "mvn test -Dtest=PasswordCheckerTest#testSym*",
       "input": "",
       "output": "",
       "comparison": "exact",
@@ -33,7 +33,7 @@
     {
       "name": "good 2",
       "setup": "",
-      "run": "mvn test -Dtest=PasswordChecker#testPassGood2*",
+      "run": "mvn test -Dtest=PasswordCheckerTest#testPassGood2*",
       "input": "",
       "output": "",
       "comparison": "exact",
@@ -43,7 +43,7 @@
     {
       "name": "good1",
       "setup": "",
-      "run": "mvn test -Dtest=PasswordChecker#testPassGood1*",
+      "run": "mvn test -Dtest=PasswordCheckerTest#testPassGood1*",
       "input": "",
       "output": "",
       "comparison": "exact",
